@@ -1,0 +1,12 @@
+.button {
+    @include button($_color: rgb(255, 62, 121),
+        $_height: 40px,
+        $_width: 40px,
+        $_radius: 50%);
+}
+
+.button-text {
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}

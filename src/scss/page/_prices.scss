@@ -1,0 +1,70 @@
+.prices {
+    &__swiper-slider .swiper-wrapper {
+        padding: 0;
+        margin: 0 0 50px 0;
+        gap: 10px;
+    }
+
+    &__swiper-slider .swiper-slide {
+        background-color: white;
+        height: 200px;
+        border-radius: 6px;
+    }
+
+
+    &__list-item {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    h6 {
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    &__order-button {
+        margin-left: 50%;
+        border-radius: 16px;
+        background: rgb(255, 62, 121);
+        width: 120px;
+        padding: 4px 12px;
+        min-height: 30px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    &__button {
+        background-color: white;
+        box-sizing: border-box;
+        border: 2px solid rgb(255, 62, 121);
+    }
+
+    &__description {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__description-button {
+        border: none;
+        background-color: transparent;
+        text-align: left;
+        padding: 0;
+    }
+
+    &__list_device_large {
+        display: none;
+    }
+
+    &__table {
+        display: none;
+    }
+}

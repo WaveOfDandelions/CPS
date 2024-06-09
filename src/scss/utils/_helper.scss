@@ -1,0 +1,8 @@
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.restrictScroll {
+  overflow-y: hidden;
+}

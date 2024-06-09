@@ -1,0 +1,8 @@
+@mixin button ($_color: rgb(255, 62, 121), $_height: 100%, $_width: 100%, $_radius: 0, $_border: none) {
+    border-radius: $_radius;
+    min-width: $_width;
+    min-height: $_height;
+    background-color: $_color;
+    border: $_border;
+    cursor: pointer;
+}

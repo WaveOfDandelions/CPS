@@ -1,0 +1,100 @@
+.header {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 12220;
+
+    &__content {
+        @include flexContainer ($_flex-d: row, $_align: center, $_padding: 1rem 0.8rem);
+
+        &-burger-container {
+            @include flexContainer ($_flex-d: row, $_align: center, $_gap: 25px);
+            width: 60%;
+        }
+
+        &-icons-container {
+            @include flexContainer ($_flex-d: row, $_justify: flex-end, $_align: center, $_gap: 20px);
+            width: 40%;
+        }
+    }
+
+    &__logo {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 32px;
+            border-radius: 1px;
+            background: rgb(234, 234, 234);
+            top: 25%;
+            left: 110%;
+        }
+    }
+
+    &__button {
+        padding-top: 7px;
+        box-sizing: border-box;
+    }
+
+    &__button:nth-child(n + 1):nth-child(-n + 3) {
+        display: none;
+    }
+
+    &__button-burger {
+        box-sizing: border-box;
+
+        &:only-of-type:nth-child(1) {
+            @include flexContainer ($_flex-d: column, $_justify: center, $_align: center);
+        }
+    }
+}
+
+.line-container {
+    @include flexContainer ($_flex-d: column, $_justify: center, $_align: start, $_gap: 2px);
+    min-width: 16px;
+    height: 30px;
+    position: relative;
+
+    &__line {
+        width: 18px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: rgb(255, 255, 255);
+        transition: transform .4s ease-in;
+
+
+
+        &:nth-child(2) {
+            width: 10px;
+        }
+
+        &:last-child {
+            width: 14px;
+        }
+
+        // Opened Burger 
+        .open &:first-child {
+            position: absolute;
+            transform: translate(10%, 280%) rotate(-45deg);
+            height: 2px;
+            width: 16px;
+            transform-origin: 0 0;
+        }
+
+        .open &:nth-child(2) {
+            width: 0;
+            height: 0;
+        }
+
+        .open &:last-child {
+            position: absolute;
+            transform: translate(-10%, 280%) rotate(45deg);
+            height: 2px;
+            width: 16px;
+            transform-origin: 100% 0;
+        }
+    }
+}

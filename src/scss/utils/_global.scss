@@ -1,0 +1,15 @@
+html {
+    font-size: calc(1em + 0.5vw);
+}
+
+body {
+    background: rgb(248, 248, 248);
+}
+
+button {
+    cursor: pointer;
+}
+
+.restrictScroll {
+    overflow-y: hidden;
+}

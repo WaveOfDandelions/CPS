@@ -1,0 +1,9 @@
+@mixin font ($_weight, $_size, $_line-height, $_color, $_letter-spacing: 0,
+  $_family: TTLakes) {
+  font-weight: $_weight;
+  font-size: $_size;
+  line-height: $_line-height;
+  color: $_color;
+  font-family: $_family;
+  letter-spacing: $_letter-spacing;
+}

@@ -1,0 +1,10 @@
+// CSS FLEX CONTAINER MIXIN
+@mixin flexContainer ($_flex-d, $_justify: flex-start, $_align: flex-start, $_gap: 0, $_padding: 0) {
+    display: flex;
+    flex-direction: $_flex-d;
+    justify-content: $_justify;
+    align-items: $_align;
+    gap: $_gap;
+    padding: $_padding;
+}
+  

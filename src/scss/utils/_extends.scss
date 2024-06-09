@@ -1,0 +1,46 @@
+// Fonts By Default
+%h1 {
+  @include font(700, 28px, 100%, $primary);
+}
+
+%h2 {
+  @include font(400, 16px, 100%, $accent);
+}
+
+%h3 {
+  @include font(500, 16px, 140%, $primary);
+}
+
+%h4 {
+  @include font(500, 14px, 140%, $accent);
+}
+
+%h5 {
+  @include font(400, 14px, 140%, $primary);
+}
+
+%h6 {
+  @include font(400, 14px, 140%, $primary);
+}
+
+%p {
+  @include font(400, 14px, 140%, $accent);
+}
+
+%a {
+  @include font(500, 16px, 170%, $accent);
+  text-decoration: none;
+}
+
+%article {
+  @include font(400, 14px, 130%, $primary);
+}
+
+%button-text {
+  @include font(500, 16px, 160%, $primary);
+}
+
+%list {
+  list-style-type: none;
+  @include font(500, 16px, 160%, $primary);
+}

@@ -1,0 +1,13 @@
+.second-heading {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+    word-spacing: 15px;
+    border-top: solid rgb(217, 255, 245) 1px;
+}
+
+:is(.prices .second-heading) {
+    word-spacing: 5px;
+}
