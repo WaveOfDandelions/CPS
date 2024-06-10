@@ -29,7 +29,31 @@
 				</div>
 			</div>
 		</div>
-		<!-- <div class="modal modal-feedback"></div> -->
+		<div class="modal modal-feedback">
+			<button class="button modal__close">
+				<img src="./images/icons/close.svg" alt="" />
+			</button>
+			<div class="modal__wrapper">
+				<div class="modal__content">
+					<div class="">
+						<h2 class="modal__heading">Обратная связь</h2>
+					</div>
+
+					<form action="">
+						<input type="text" placeholder="Имя" />
+						<input type="text" placeholder="Телефон" />
+						<input type="text" placeholder="Электронная почта" />
+						<input type="text" placeholder="Собщение" />
+						<p class="modal__data">
+							Нажимая “отправить”, вы даете согласие на обработку
+							персональных данных и соглашаетесь с нашей политикой
+							конфиденциальности
+						</p>
+						<button class="button modal__button">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
 
 		<header class="header">
 			<div class="overlay-wrapper">
@@ -75,7 +99,7 @@
 							class="button header__button header__button-chat"
 						>
 							<img
-								class="header__chat-icon"
+								class="header__chat-icon button-feedback"
 								src="images/icons/chat.svg"
 								alt="device status"
 							/>
@@ -206,7 +230,9 @@
 							<button class="button overlay__button button-call">
 								<img src="./images/icons/call.svg" alt="call" />
 							</button>
-							<button class="button overlay__button">
+							<button
+								class="button overlay__button button-feedback"
+							>
 								<img src="./images/icons/chat.svg" alt="chat" />
 							</button>
 							<button class="button overlay__button">
