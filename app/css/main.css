@@ -1439,9 +1439,13 @@ input {
     max-width: 450px;
     text-wrap: balance;
     margin-bottom: 20px; }
+    .services__article_display {
+      display: none; }
   .services__more {
     max-width: 200px;
     align-self: flex-start; }
+    .services__more_hidden {
+      display: none; }
   .services__image {
     width: 100%; }
   .services__button {
@@ -1484,6 +1488,19 @@ input {
     border: 2px solid #ff3e79; }
   .brands__list {
     display: none; }
+    .brands__list-item:nth-child(n + 9):nth-child(-n + 1000) {
+      display: none;
+      background-color: white;
+      align-items: center;
+      justify-content: space-around;
+      height: 60px;
+      box-sizing: border-box;
+      width: 265px; }
+  .brands__hide {
+    display: none;
+    padding-left: 20px; }
+  .brands__show {
+    display: none; }
 
 .repair__swiper-slider .swiper-wrapper {
   padding: 0;
@@ -1503,6 +1520,8 @@ input {
   justify-content: flex-end;
   padding: 16px;
   box-sizing: border-box; }
+  .repair__list-item:nth-child(n + 5):nth-child(-n + 1000) {
+    display: none; }
 
 .repair__button {
   background-color: white;
@@ -1515,6 +1534,13 @@ input {
 
 .repair__list_device_large {
   display: none; }
+
+.repair__show {
+  display: none; }
+
+.repair__hide {
+  display: none;
+  padding-left: 20px; }
 
 .prices__swiper-slider .swiper-wrapper {
   padding: 0;
@@ -1667,7 +1693,7 @@ input {
     margin: 0;
     justify-self: flex-start;
     align-self: flex-start;
-    padding: 40px 20px; }
+    padding: 40px 0; }
     .services__heading {
       margin: 0; }
     .services__article {
@@ -1687,7 +1713,8 @@ input {
     height: auto;
     transform: translateY(0);
     margin-bottom: 0;
-    width: 100%; }
+    width: 100%;
+    align-items: flex-start; }
     .brands__list {
       display: flex;
       flex-direction: row;
@@ -1705,6 +1732,9 @@ input {
         padding: 10px;
         background-color: #fff;
         width: 20%; }
+    .brands__show {
+      display: block;
+      padding-left: 20px; }
   .repair {
     transform: translateY(0);
     width: 100%; }
@@ -1731,6 +1761,9 @@ input {
       margin: 16px 0; }
     .repair__button {
       margin-left: 25%; }
+    .repair__show {
+      display: block;
+      padding-left: 20px; }
   .prices {
     transform: translateY(0);
     width: 100%; }
