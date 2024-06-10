@@ -34,5 +34,25 @@
 
     &__list {
         display: none;
+
+        &-item:nth-child(n + 9):nth-child(-n + 1000) {
+            display: none;
+            background-color: rgb(255, 255, 255);
+            align-items: center;
+            justify-content: space-around;
+            height: 60px;
+            box-sizing: border-box;
+            width: 265px;
+
+        }
+    }
+
+    &__hide {
+        display: none;
+        padding-left: 20px;
+    }
+
+    &__show {
+        display: none;
     }
 }

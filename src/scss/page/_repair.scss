@@ -19,6 +19,10 @@
         justify-content: flex-end;
         padding: 16px;
         box-sizing: border-box;
+
+        &:nth-child(n + 5):nth-child(-n + 1000) {
+            display: none;
+        }
     }
 
     &__button {
@@ -34,5 +38,14 @@
 
     &__list_device_large {
         display: none;
+    }
+
+    &__show {
+        display: none;
+    }
+
+    &__hide {
+        display: none;
+        padding-left: 20px;
     }
 }

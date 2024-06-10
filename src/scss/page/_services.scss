@@ -47,11 +47,19 @@
         max-width: 450px;
         text-wrap: balance;
         margin-bottom: 20px;
+
+        &_display {
+            display: none;
+        }
     }
 
     &__more {
         max-width: 200px;
         align-self: flex-start;
+
+        &_hidden {
+            display: none;
+        }
     }
 
     &__image {
