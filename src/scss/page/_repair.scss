@@ -42,6 +42,16 @@
 
     &__show {
         display: none;
+
+        &::after {
+            content: '';
+            background-image: url('../images/icons/expand.svg');
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: 0;
+            left: 10px;
+        }
     }
 
     &__hide {
