@@ -1,15 +1,14 @@
+let body = document.querySelector("body");
+let header = document.querySelector(".header");
+let overlay = document.querySelector(".overlay");
+let appWrapper = document.querySelector(".app-wrapper");
+
 let burger = document.querySelector(".header__button-burger");
 let burgerOverlay = document.querySelector(".overlay__button-burger");
 let lines = document.querySelector(".line-container");
 let burgerTransform = document.querySelector(
 	".header__content-burger-container",
 );
-
-let appWrapper = document.querySelector(".app-wrapper");
-
-let overlay = document.querySelector(".overlay");
-let header = document.querySelector(".header");
-let body = document.querySelector("body");
 
 burger.addEventListener("click", (e) => {
 	e.preventDefault();

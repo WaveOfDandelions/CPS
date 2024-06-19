@@ -1,5 +1,4 @@
 .services {
-    transform: translateY(90px);
 
     &__swiper-slider {
         margin: 0;
@@ -61,7 +60,20 @@
 
         &_hidden {
             display: none;
+            padding-left: 20px;
+
+            &::after {
+                content: '';
+                background-image: url('../images/icons/expand.svg');
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                top: 0;
+                left: -8px;
+                transform: rotate(180deg);
+            }
         }
+
     }
 
     &__more::after {

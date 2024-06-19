@@ -80,5 +80,3 @@ for (let i = 0; i < modalClose.length; i++) {
 		modalClose[i].classList.remove("open");
 	});
 }
-
-console.log(appWrapper.classList);

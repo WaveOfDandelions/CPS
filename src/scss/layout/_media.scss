@@ -3,11 +3,17 @@
         display: none;
     }
 
+    .modal {
+        position: fixed;
+        z-index: 40000;
+        height: 1px;
+        transform: translate3d(100vw, 0, 0);
+    }
+
     .modal__wrapper {
         height: 100vh;
-        width: 40vw;
+        width: 320px;
         background-color: white;
-        position: fixed;
         overflow-x: hidden;
         transform: translate3d(100vw, 0, 0);
         z-index: 200000;
@@ -22,7 +28,7 @@
     }
 
     .modal__wrapper:is(.open) {
-        transform: translate3d(60vw, 0, 0);
+        right: 0;
     }
 
     .modal__close {
@@ -37,7 +43,7 @@
         z-index: 40000000;
         position: fixed;
         top: 40px;
-        left: 53vw;
+        left: -420px;
         padding-top: 7px;
         display: block;
     }
@@ -51,7 +57,6 @@
 
     .header {
         z-index: 220;
-        width: 100vw;
 
         &__button:nth-child(n + 1):nth-child(-n + 3) {
             display: flex;
@@ -87,7 +92,7 @@
         }
 
         &__content {
-            transform: translateX(-1200px);
+            transform: translate(-1200px);
             width: 330px;
             height: 100vh;
             box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
@@ -101,7 +106,7 @@
 
         .open &__content {
             z-index: 12000;
-            transform: translateY(0);
+            transform: translateY(-100px);
             height: 100vh;
             width: 330px;
 
@@ -326,45 +331,6 @@
         display: none;
     }
 
-    .modal__wrapper {
-        height: 100vh;
-        width: 20vw;
-        background-color: white;
-        position: fixed;
-        overflow-x: hidden;
-        transform: translate3d(100vw, 0, 0);
-        z-index: 200000;
-    }
-
-    .modal__content {
-        margin-top: 0;
-    }
-
-    input {
-        width: 300px;
-    }
-
-    .modal__wrapper:is(.open) {
-        transform: translate3d(77vw, 0, 0);
-    }
-
-    .modal__close {
-        z-index: 40000000;
-        position: fixed;
-        top: 47px;
-        padding-top: 7px;
-        display: none;
-    }
-
-    .modal__close:is(.open) {
-        z-index: 40000000;
-        position: fixed;
-        top: 40px;
-        left: 1100px;
-        right: 900px;
-        padding-top: 7px;
-        display: block;
-    }
 
     .overlay-wrapper {
         display: flex;

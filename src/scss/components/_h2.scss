@@ -4,10 +4,10 @@
     text-wrap: wrap;
     word-wrap: break-word;
     word-break: break-word;
-    word-spacing: 15px;
+    word-spacing: 1px;
     border-top: solid rgb(217, 255, 245) 1px;
 }
 
 :is(.prices .second-heading) {
-    word-spacing: 5px;
+    word-spacing: 1px;
 }
